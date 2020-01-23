@@ -10,7 +10,7 @@ clr
 body
 {
     font-family: 'Baloo Bhaijaan', cursive;
-    position: relative;
+    
 }
 p
 {
@@ -18,30 +18,34 @@ p
     font-family: 'Markazi Text', serif;
     font-size: 20px;
 }
-
+.navbar 
+{
+background-color: transparent;
+    width: 100%;
+    position: fixed;
+    z-index: 9999999;
+}
 nav img
 {
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
 }
 .home 
 {
      height: 100%;
-     background-size: cover;
-     background-size: cover;
-    background-image: url("../photo/1.jpg");
-    position: relative;
+   
  
 }
 .home1
 {
     
-    background-color: rgba(3,61,81,0.85);
+ /*   background-color: rgba(3,61,81,0.85); */
    height: 100%;
 }
 .home video
 {
     width: 100%;
+    
     
    
 }
@@ -62,15 +66,21 @@ nav img
     padding: 20px;
     text-align: center;
 } 
+.homecont
+{
+    position: relative ;
+  
+}
 .home i 
 {
     color: white ;
     font-size: 32px;
     position: absolute ; 
-    top: 365px ;
-    right: 840px; 
+    top: 25px ;
+    left: 620px; 
     cursor: pointer;
 }
+/*
 .layer 
 {
     height: 3px; 
@@ -94,12 +104,14 @@ nav img
     display: none ; 
 }
 
-.layer2  iframe
+.layer2 iframe
 {
    margin: 150px 350px;
+    width: 750px;
+    height: 500px;
     
 
-}
+} 
 
 .layer3 
 {
@@ -114,7 +126,7 @@ nav img
     right: 60px; 
     color: gray ;
     cursor: pointer;
-}
+}*/
 
 .box1 
 {
@@ -126,6 +138,10 @@ nav img
 /* section id */ 
 
 
+.ident
+{
+    margin-top: 300px;
+}
 .bigbox 
 {
     
@@ -144,10 +160,8 @@ nav img
 {
  
     background-color:#f8f77c;
-    padding: 30px;
-    width: 35%;
-    position: absolute;
-    top: -100px;
+    padding: 60px;
+    
     
     
 }
@@ -172,6 +186,14 @@ nav img
     background-attachment: fixed;
     
 } 
+.opin h3
+{
+    color: white ;
+    padding-top: 50px;
+    font-size: 62px;
+   /* font-family: 'Markazi Text', serif; */
+}
+
 .layer5 
 {
     background-color: rgba(3,61,81,0.85);
@@ -181,17 +203,24 @@ nav img
 {
     margin-top: 100px ;
     margin-left: 400px;
-   
+    width: 560;
+    height: 315;
 }
 
 .regest
 {
     margin-top: 200px;
+   
     
      font-family: 'Markazi Text', serif;
     font-size: 25px;
     
-} 
+}  
+.regest form 
+{
+   border: solid 2px rgb(3,61,81) ; 
+     padding: 100px;
+}
 .btn
 {
     background-color: rgb(3,61,81);
@@ -227,3 +256,78 @@ nav img
     z-index: 12345; 
     
 }
+
+
+
+/*responsiv */ 
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) 
+{
+    
+    
+
+    
+.fram
+{
+    margin-top: 100px ;
+    margin-left: 80px;
+    width: 400;
+    height: 315;
+} 
+    
+    
+    
+    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) 
+{
+   
+    .fram
+{
+    margin-top: 100px ;
+    margin-left:30px ;
+    width: 500;
+    height: 315;
+}  
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) 
+{
+    
+    .fram
+{
+    margin-top: 100px ;
+    margin-left: 54px;
+    width: 660;
+    height: 415;
+}
+     
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px)
+{
+
+    .fram
+{
+    margin-top: 100px ;
+    margin-left: 400px;
+    width: 760;
+    height: 415;
+}
+    
+
+   
+ 
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}

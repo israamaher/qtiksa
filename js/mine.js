@@ -1,12 +1,27 @@
-function play()
-{
-   $(".layer2").css("display","block");
-} 
+$(function() {
+  $('.skitter-large').skitter() ;
+});
 
-$("#close").click(function(){
-     $(".layer2").css("display","none");
-}) ;
 
+
+
+$(window).scroll( function(){
+
+  var windowOffs =$(window).scrollTop();
+  var program= $("#prog").offset().top; 
+  console.log ( "gh") ;
+
+      if (windowOffs >= program)
+      {
+        $(".navbar").css("backgroundColor","rgba(3,61,81,0.85)")
+      }
+      else
+      {
+        $(".navbar").css("backgroundColor","transparent ")
+
+      } 
+    
+});
 
 
 $(".arrow").click(function(){
